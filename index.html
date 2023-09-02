@@ -7,9 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Stay Updated!</h1>
     <div id="form-container">
-      <div id="form-header"></div>
+      <div id="form">
+        <h1>Stay Updated!</h1>
+        <p id="tag">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul id="points">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form id="sign-up">
+          <div id="email">
+            <label for="email">Email address</label><br />
+            <input
+              type="email"
+              placeholder="email@company.com"
+              required
+            /><br />
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+      </div>
       <picture>
         <source
           media="(max-width:500px)"
