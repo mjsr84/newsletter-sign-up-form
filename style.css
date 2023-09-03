@@ -12,7 +12,6 @@ body {
     font-size: 16px;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: var(--Charcoal-Grey);
 }
 
@@ -35,7 +34,6 @@ body {
 }
 
 h1 {
-    display: flex;
     font-size: max(3.5em);
 }
 
@@ -43,14 +41,12 @@ ul {
     list-style-image: url(/assets/images/icon-list.svg);
     display: flex;
     flex-direction: column;
-
     padding-left: 1.25em;
 }
 
 li {
     margin: 0.4em;
     padding-left: 0.8em;
-    vertical-align: middle;
 }
 
 label {
@@ -83,6 +79,7 @@ button {
     cursor: pointer;
 }
 
+/* I switched display to grid here so I could organize the elements with the picture element on top when the screen is mobile */
 @media screen and (max-width: 500px) {
     #form-container {
         width: auto;
@@ -106,8 +103,6 @@ button {
         margin-top: 0em;
 
     }
-
-
 
     button {
         width: 100%;
