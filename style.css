@@ -26,7 +26,7 @@ body {
     border-radius: 25px;
 }
 
-picture {
+#picturecontainer {
     margin: 1em;
 }
 
@@ -35,20 +35,22 @@ picture {
 }
 
 h1 {
-    font-size: 2.5em;
+    display: flex;
+    font-size: max(3.5em);
 }
 
 ul {
     list-style-image: url(/assets/images/icon-list.svg);
     display: flex;
     flex-direction: column;
-    padding-left: 1.25em;
 
+    padding-left: 1.25em;
 }
 
 li {
     margin: 0.4em;
-    line-height: 1em;
+    padding-left: 0.8em;
+    vertical-align: middle;
 }
 
 label {
@@ -72,7 +74,7 @@ button {
     height: 3.5em;
     border-radius: 5px;
     border: none;
-    margin: 0.5em 0;
+    margin: 1.5em 0;
     padding: 0.5em;
     font-size: 0.8em;
     background-color: var(--Dark-Slate-Grey);
@@ -83,28 +85,29 @@ button {
 
 @media screen and (max-width: 500px) {
     #form-container {
-        width: 350px;
-    }
-
-    #form-container {
+        width: auto;
         display: grid;
         grid-template-areas:
-            "picture"
+            "picture",
             "form";
-        height: 100vh;
         border-radius: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    picture {
-        grid-area: "picture";
-        width: 100%;
     }
 
     #form {
-        grid-area: "form";
+        grid-area: form;
+        margin-top: 10em;
     }
+
+    #picturecontainer {
+        grid-area: picture;
+        margin-bottom: 40em;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-top: 0em;
+
+    }
+
+
 
     button {
         width: 100%;
@@ -112,5 +115,9 @@ button {
 
     input {
         width: 95%;
+    }
+
+    h1 {
+        font-size: 2.5em;
     }
 }

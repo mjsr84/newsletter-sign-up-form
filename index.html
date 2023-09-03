@@ -18,6 +18,7 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
+
         <form id="sign-up">
           <div id="email">
             <label for="email">Email address</label><br />
@@ -30,20 +31,22 @@
           </div>
         </form>
       </div>
-      <picture>
-        <source
-          media="(max-width:500px)"
-          srcset="./assets/images/illustration-sign-up-mobile.svg"
-        />
-        <source
-          media="(min-width:501px)"
-          srcset="./assets/images/illustration-sign-up-desktop.svg"
-        />
-        <img
-          src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="mobile image"
-        />
-      </picture>
+      <div id="picturecontainer">
+        <picture>
+          <source
+            media="(max-width:500px)"
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+          />
+          <source
+            media="(min-width:501px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="mobile image"
+          />
+        </picture>
+      </div>
     </div>
   </body>
 </html>
